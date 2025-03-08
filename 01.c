@@ -62,29 +62,34 @@ int sum = 10 + 3;
  Conditonal statements
 
  if : executes code if a condition is true.
+
  if-else : executes one block of code if true, another if false.
+
  swith: selects one block from multiple options 
 
 */
 int main(){
     
-    int marks = 90;
+    int choice;
 
-    if (marks >= 90) {
-        printf("Grade: A\n");
-    } 
+    printf("Enter a number (1-3): ");
+    scanf("%d", &choice);
 
-    else if (marks >= 75) {
-        printf("Grade: B\n");
-    }
-
-    else if (marks >= 50) {
-        printf("Grade: C\n");
-    } 
-    
-    else {
-        printf("Grade: F (Fail)\n");
+    switch (choice) {
+        case 1:
+            printf("You chose option 1.\n");
+            break;
+        case 2:
+            printf("You chose option 2.\n");
+            break;
+        case 3:
+            printf("You chose option 3.\n");
+            break;
+        default:
+            printf("Invalid choice!\n");
     }
 
     return 0;
 }
+
+
