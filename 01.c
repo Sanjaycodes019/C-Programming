@@ -97,13 +97,21 @@ DECLARATION:
 
 */
 int main(){
-    
-int number[5]; // declaration
 
+   // taking input from user ( loop )
 
+   int number[10];
 
+   print("enter 10 numbers: ");
 
+   for( int i = 0; i<10; i++){
+    scanf("%d", &number[i]);
+   }
 
+   printf("you entered: ");
+   for( int i = 0; i<10; i++){
+    printf("%d ", number[i]);
+   }
 
     return 0;
 }
