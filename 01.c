@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
     /* 
     int -> whole numbers (4 bytes)  ( 1 bytes = 8 bits )
     float -> decimal numbers (4 bytes)
@@ -103,13 +103,9 @@ string: sequence of characters terminated by special character called null chara
 
 */
 int main(){
-    
-    char name[20]; // declare
 
-    printf("Enter your name: "); 
-    scanf("%s", name);   // Takes input
-
-    printf("Hello, %s\n", name);
+    char str[] = "Sanjay";
+    printf("Length: %d\n", strlen(str)); 
 
     return 0;
 }
