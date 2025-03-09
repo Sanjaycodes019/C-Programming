@@ -104,8 +104,13 @@ string: sequence of characters terminated by special character called null chara
 */
 int main(){
 
-    char str[] = "Sanjay";
-    printf("Length: %d\n", strlen(str)); 
+    char str1[] = "apple";
+    
+    strrev(str1);
+
+    printf(str1);
+
+
 
     return 0;
 }
