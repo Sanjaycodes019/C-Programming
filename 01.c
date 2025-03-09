@@ -67,28 +67,43 @@ int sum = 10 + 3;
 
  swith: selects one block from multiple options 
 
+
+
+ // loops in C
+
+loops: are used to execute a block of code multiple times,
+untill a certain condition is met
+
+ types: 
+ 1. for
+ 2. while
+ 3. do-while
+
+ARRAY IN C
+-> array is the collection of SAME DATA TYPE stored in CONTIGUOUS MEMORY LOCATION;
+-> allows storing multiple values in SINGLE VARIABLE ( Instead of creating seperate variable for each value)
+
+ADVANTAGE:
+-> stores multiple value under one name;
+-> allow fast and random access using index number;
+-> makes the code cleaner and easier to manage;
+
+DECLARATION:
+-> data_type array_name[array_size];
+-> int arr[10];  array size of 10 integers;
+-> this means arr can store 10 integer value;
+
+
+
 */
 int main(){
     
-    int choice;
 
-    printf("Enter a number (1-3): ");
-    scanf("%d", &choice);
 
-    switch (choice) {
-        case 1:
-            printf("You chose option 1.\n");
-            break;
-        case 2:
-            printf("You chose option 2.\n");
-            break;
-        case 3:
-            printf("You chose option 3.\n");
-            break;
-        default:
-            printf("Invalid choice!\n");
-    }
 
+
+
+    
     return 0;
 }
 
