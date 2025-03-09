@@ -97,8 +97,15 @@ DECLARATION:
 
 */
 int main(){
+    // character array stored in double quotation " ";
+char name[10] = "Bandana"; 
+ char surname[10] = "Sharma";
+ 
+ printf("%s %s\n", name, surname);
 
-    
+for(int i = 0; i<10; i++){
+    printf("%c", name[i]); // character array
+}
 
     return 0;
 }
