@@ -98,12 +98,13 @@ DECLARATION:
 */
 int main(){
     
+int number[5]; // declaration
 
 
 
 
 
-    
+
     return 0;
 }
 
