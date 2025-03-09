@@ -93,19 +93,23 @@ DECLARATION:
 -> int arr[10];  array size of 10 integers;
 -> this means arr can store 10 integer value;
 
+Character array & strings;
+
+-> strings are represented using character array 
+-> because C doesn't have a built-in string datatype
+
+string: sequence of characters terminated by special character called null character (\0).
 
 
 */
 int main(){
-    // character array stored in double quotation " ";
-char name[10] = "Bandana"; 
- char surname[10] = "Sharma";
- 
- printf("%s %s\n", name, surname);
+    
+    char name[20]; // declare
 
-for(int i = 0; i<10; i++){
-    printf("%c", name[i]); // character array
-}
+    printf("Enter your name: "); 
+    scanf("%s", name);   // Takes input
+
+    printf("Hello, %s\n", name);
 
     return 0;
 }
